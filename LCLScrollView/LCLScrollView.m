@@ -92,7 +92,7 @@
         }else {
             _currentIndex ++;
         }
-    }else if (offset < (_currentIndex%3) * scrollView.bounds.size.width) {
+    }else if (offset < (_currentIndex%3) * scrollView.bounds.size.width) {// left swipt
         if (_currentIndex == 0) {
             _currentIndex = _images.count - 1;
         }else {
