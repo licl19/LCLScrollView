@@ -86,13 +86,13 @@
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
     CGFloat offset = scrollView.contentOffset.x;
     NSLog(@"%f",offset);
-    if (offset > (_currentIndex%3) * scrollView.bounds.size.width) {// right swipt
+    if (offset > (_currentIndex%3) * scrollView.bounds.size.width) {// right swipe
         if (_currentIndex == _images.count - 1) {
             _currentIndex = 0;
         }else {
             _currentIndex ++;
         }
-    }else if (offset < (_currentIndex%3) * scrollView.bounds.size.width) {// left swipt
+    }else if (offset < (_currentIndex%3) * scrollView.bounds.size.width) {// left swipe
         if (_currentIndex == 0) {
             _currentIndex = _images.count - 1;
         }else {
