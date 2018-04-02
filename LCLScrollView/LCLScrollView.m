@@ -85,7 +85,6 @@
 }
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
     CGFloat offset = scrollView.contentOffset.x;
-    NSLog(@"%f",offset);
     if (offset > (_currentIndex%3) * scrollView.bounds.size.width) {// right swipe
         if (_currentIndex == _images.count - 1) {
             _currentIndex = 0;
